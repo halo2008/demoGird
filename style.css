@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+header {
+	background-color: #313332;
+	position: absolute;	
+	width: 100%;	
+}
+
+header nav ul {	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li {
+ 	display: inline-block;
+}
+
+header nav ul li a {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 50px;
+	padding: 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.hero {
+	background-position: center;	
+	background: url('https://static.pexels.com/photos/40185/mac-freelancer-macintosh-macbook-40185.jpeg');	
+	height: 100vh;
+	overflow: hidden;
+	padding-top: 42vh;
+	width: 100%;
+	background-size: cover;
+ }
+
+.slogan {
+	color: #FFF;
+	float: right;
+	width:  35%;
+	padding: 20px;
+	border-radius: 2px;
+    background-color: rgba(0, 0, 20, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 0px 1px rgba(0, 2, 0, 0.3);
+	
+}
+
+.slogan h1 {
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	text-transform: uppercase;	
+}
+
+.slogan h1:nth-of-type(1) {
+	font-weight: lighter;
+}
+
+.row:before, 
+.row:after {
+    clear: both;
+    content: "";
+    display: table ;
+}
+/* GIRD */
+[class*="col-"] {
+    float:left;  
+}
+
+/* style ikonek*/
+.advantage i.fa {
+ 	background: #000;
+ 	border-radius: 25px;
+ 	color: #fff;
+ 	font-size: 120px;
+ 	margin-top: 50px;
+ 	margin: 0 auto;
+ 	padding: 20px;
+ 	text-align: center;
+}
+
+.advantage {
+	margin-top: 5%;
+	text-align: center;	
+}
+
+.advantage p {
+	color: #000;
+	text-align: center;
+}
+
+section .container {
+	margin: 50px auto;				 
+	text-align: center;
+}
+
+.featured h1 {
+	font-weight: bold;
+	margin-top: 50px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.featured p {
+	color: #000;
+	text-align: center;
+}
+/* style dla galerii */
+.gallery .row [class*="col-"] {
+	position: relative;
+}
+
+.gallery img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.gallery {
+	margin-top: 5%;
+}
+
+.layer {
+	margin: 0 auto;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	transition: background-color .3s ease-in;
+	width: 100%;	
+}
+
+.layer > i.fa {	
+	visibility: hidden;
+	color: #313234;
+	padding: 15px;
+	margin: 10px;	
+	font-size: 26px;
+	background-color: #FFFFFF;
+	border-radius: 5px;		
+}
+
+.layer > i.fa:nth-of-type(1) {
+	margin-right: 50%;
+	margin-top: 45%;
+	left: 0;
+}
+
+.layer > i.fa:nth-of-type(2) {
+	margin-top: 45%;
+	right: 0;
+}
+
+.layer i.fa {   
+    transition-duration: .3s;
+}
+
+/* Zatrudnieni */
+.image {
+	border-radius: 50%;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	margin: 0 auto;  	
+}
+
+.layer-b {	
+	padding-top: 45%;
+}
+
+.layer-b h3 {
+	text-align: center;
+	margin: 0;
+	transition: .5s;
+	opacity: 0;
+	color: #fff;
+}
+
+.employees {
+	margin-top: 5%;
+}
+
+.underPic {
+	text-align: center;
+	color: black;
+}
+
+.pictures {
+	position: relative;
+	width: 100%;	
+	background-color: #313332;	
+	color: #fff;
+	overflow: hidden;	
+}
+
+.pictures h1 {
+	text-transform: uppercase;
+	font-style: bold;
+}
+
+.paragraph {
+	font-size: 12px;
+}
+
+.paragraph-italic {
+	font-size: 12px;
+	font-style: italic;
+}
+
+
+.pic {
+	object-fit: cover;
+}
+
+.contact {
+	margin-top: 5%;
+}
+
+.numbers h1 {
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+	font-size: 48px;
+}
+
+.numbers p {
+	color: #04C8E8;
+	text-align: center;
+}
+
+.contacts {	
+	background-color: #313332;
+}
+
+.contacts h1 , p, h3 {
+	text-align: left;
+	color: #fff;
+}
+
+.contacts p {
+	margin-top: 0;
+}
+
+.contacts h3 {
+	margin-top: 0;
+	color: #fff;
+}
+
+.contacts h1 {
+	position: relative;
+}
+
+.contacts h1:after {
+	position: absolute;
+	content: " ";
+	top: 50%;
+	background-color: white;
+	height: 2px;
+	width: 80px;
+	margin-left: 10px;
+}
+
+.social i.fa {
+	float: left;
+	width: 35px;
+	height: 35px;
+	font-size: 25px;
+	color: #fff;
+	background-color: #00c7e8;
+	border-radius: 0%;
+	padding: 5px;
+	margin: 0 5px;
+}
+
+footer {
+	margin: -50px;	
+}
+
+footer p {
+	padding: 20px;
+	color: #fff;
+	background-color: black;
+	text-align: center;
+}
+
+
+@media (max-width: 767px){
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    header nav ul li  {		
+		display: block;
+		cursor: pointer;		
+	}
+
+	nav img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	nav ul {
+		text-align: center;
+	}
+
+	.slogan {
+		padding: 0;			
+		margin-top: 22vh;
+		width: 100%;
+	}
+
+	.slogan h1 {
+		text-align: center;
+	}
+
+	.featured {
+		padding: 15px;
+	}
+	
+	.layer i.fa {
+		visibility: visible;		
+	}	
+
+	.layer > i.fa:nth-of-type(1) {
+		margin-right: 5%;
+		margin-top: 45%;
+		left: 0;
+	}	
+
+	.pictures img {		
+		padding: 25px;
+		position: absolute;
+		width: 100%;	
+				
+	}	
+	
+	.paragraph-section {
+		padding: 15px;
+		margin-top: 95%;
+		position: relative;
+		z-index: 1;
+		background-color: #313332;
+	}
+
+	.paragraph-section > h1 {
+		text-align: center;
+	}	
+
+	.contacts {
+		padding: 0 15px 10px 15px;
+	}
+
+}
+
+@media (min-width: 768px) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+    nav img {
+    	padding: 10px;
+    }   
+
+    header nav ul li a:hover {
+		color: #07C9ED;
+		transition: color.5s ease;
+	}
+
+	.advantage .col-m-4:hover i {
+		background-color: #00C7E8;
+		transition: all .4s ease;
+	}
+	
+	.layer:hover > i.fa:nth-of-type(1) { 
+		visibility: visible; 
+	    margin-right: 5%;
+	    padding: 15px;
+	    font-size: 26px;    
+	    transition-property: margin-right;
+	    cursor: pointer;    
+	}
+
+	.layer:hover > i.fa:nth-of-type(2) { 
+		visibility: visible; 
+	    margin-left: 5%;
+	    padding: 15px;
+	    font-size: 26px;    
+	    transition-property: margin-left;
+	    cursor: pointer;
+	}
+
+	.layer:hover > i.fa {
+		cursor: pointer;
+		transform: height;
+	}
+
+	.layer i.fa:hover {
+		transform: scale(1.30);
+		transition-duration: .3s;	
+	} 
+
+	.img:hover > .layer {	
+		background-color: rgba(0,0,0,.5);
+	}
+
+	.employees .image:hover .layer {
+		background-color: rgba(0,0,0,1);
+	}
+
+	.image:hover .layer h3 {
+		opacity: 1;
+	}
+	
+	.paragraph-section {
+		margin-left: 33.33%;
+	}
+	
+	.pictures img {		
+		position: absolute;
+		overflow: hidden;
+		margin: 0 auto;
+		width: auto;
+		object-fit: cover;		
+	}
+
+	.contacts {
+		padding: 0 15px;
+	}
+
+	.social i.fa:hover {
+		transform: scale(1.10);
+		transition: .2s ease;
+	}
+}
